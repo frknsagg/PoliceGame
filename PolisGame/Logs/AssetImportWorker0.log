@@ -1,0 +1,1325 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.10f1 (297d780c91bc) revision 2719096'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 22621.674; Version 2009; 64bit' Language: 'tr' Physical Memory: 24462 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\Unity Projeleri\2020.3.10f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/furka/Unity-Projeleri/PoliceGame/PolisGame
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+64640
+Successfully changed project path to: C:/Users/furka/Unity-Projeleri/PoliceGame/PolisGame
+C:/Users/furka/Unity-Projeleri/PoliceGame/PolisGame
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 42.98 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.10f1 (297d780c91bc)
+[Subsystems] Discovering subsystems at path D:/Unity Projeleri/2020.3.10f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/furka/Unity-Projeleri/PoliceGame/PolisGame/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce MX110 (ID=0x174e)
+    Vendor:   
+    VRAM:     2010 MB
+    Driver:   30.0.15.1278
+Initialize mono
+Mono path[0] = 'D:/Unity Projeleri/2020.3.10f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity Projeleri/2020.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Unity Projeleri/2020.3.10f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56160
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity Projeleri/2020.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.067958 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 26.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 13.024 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.010502 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.120 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.17 seconds
+Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.8 MB.
+System memory in use after: 84.9 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 1852.
+Total: 2.194300 ms (FindLiveObjects: 0.160400 ms CreateObjectMapping: 0.038400 ms MarkObjects: 1.865500 ms  DeleteObjects: 0.128800 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e72eaf5192985babb6a678f66a8a0c9a') in 0.046052 seconds
+  Import took 0.049869 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012776 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.940 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1394 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.5 MB.
+System memory in use after: 84.6 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1855.
+Total: 5.426200 ms (FindLiveObjects: 0.537000 ms CreateObjectMapping: 0.489400 ms MarkObjects: 4.261300 ms  DeleteObjects: 0.135500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010884 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.974 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1394 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.6 MB.
+System memory in use after: 84.6 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1858.
+Total: 2.117900 ms (FindLiveObjects: 0.172700 ms CreateObjectMapping: 0.046900 ms MarkObjects: 1.793600 ms  DeleteObjects: 0.103100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004418 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.152 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1394 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.6 MB.
+System memory in use after: 84.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1861.
+Total: 7.081600 ms (FindLiveObjects: 0.286700 ms CreateObjectMapping: 0.126900 ms MarkObjects: 6.509700 ms  DeleteObjects: 0.154400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 432.538441 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fdf7c1a4645541f3520c8d60cea13c1') in 0.020950 seconds
+  Import took 0.028648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.335291 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f92841f17e9816a8a336de48e45b901a') in 0.002269 seconds
+  Import took 0.004868 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003819 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.438 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1394 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.6 MB.
+System memory in use after: 84.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1864.
+Total: 4.348400 ms (FindLiveObjects: 0.542000 ms CreateObjectMapping: 0.156100 ms MarkObjects: 3.488300 ms  DeleteObjects: 0.159200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003775 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  6.300 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1394 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.6 MB.
+System memory in use after: 84.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1867.
+Total: 6.122800 ms (FindLiveObjects: 0.283800 ms CreateObjectMapping: 0.097200 ms MarkObjects: 5.498300 ms  DeleteObjects: 0.239100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 83.442755 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004100 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:06.386196Z'
+  Import took 0.010461 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009680 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.267 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1394 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.6 MB.
+System memory in use after: 84.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1870.
+Total: 4.514900 ms (FindLiveObjects: 0.267300 ms CreateObjectMapping: 0.092400 ms MarkObjects: 4.021900 ms  DeleteObjects: 0.130900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 6.297128 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002301 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.006934 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.084177 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000649 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004638 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.041007 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000545 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004610 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.040809 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000535 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004533 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.113718 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000552 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.037647 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000528 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004374 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036338 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000524 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004443 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.054294 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000700 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.042313 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000536 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004635 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035026 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000528 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004501 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.048153 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000522 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004437 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034794 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000518 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004428 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.041456 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000571 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.005303 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.050883 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000597 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.006347 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.041086 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000559 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.042159 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000528 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.008233 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.046750 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000570 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004801 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034161 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000521 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004395 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.046206 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000544 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.005028 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034295 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000528 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004467 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033938 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000519 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.047778 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000518 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034200 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000527 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004470 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035069 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000566 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.005140 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.044318 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000554 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.005461 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035992 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000526 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004408 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035662 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000536 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004499 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.047564 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000545 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004493 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035704 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000519 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036655 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000538 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004511 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.048687 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000545 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004441 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035616 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000527 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004465 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036907 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000563 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.039841 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000522 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.043598 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000526 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035832 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000542 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036458 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000668 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004951 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.050467 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000573 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.005453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035458 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000521 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004441 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.037021 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000522 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004451 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.048605 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000556 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.005202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034883 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000523 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.037315 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000538 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004514 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.040245 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000522 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004500 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.044300 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000521 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004448 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035988 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000540 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.038282 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000526 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004439 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.052622 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000553 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004469 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.041312 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000529 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004552 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036614 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000535 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004437 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.045720 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000569 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.005026 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035328 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000529 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004433 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.038765 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000535 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004449 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.044114 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000523 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004448 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036389 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000526 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.047845 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000536 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036423 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000532 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004436 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035816 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000524 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.048976 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000527 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004448 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035810 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000524 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004410 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.037675 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000563 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004642 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.048330 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000762 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004934 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034868 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000536 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004396 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033948 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000533 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.045479 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000535 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.005137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032825 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000532 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004465 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.037697 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000526 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004490 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.044382 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000522 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004389 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034177 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000519 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004451 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.037712 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000525 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004443 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.042732 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000517 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004404 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034255 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000524 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.038184 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000530 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004492 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.043779 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000529 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004482 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.037711 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000751 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.006471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.043865 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000739 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.005993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.052590 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000802 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.007033 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.043324 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000756 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.006615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.040773 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000567 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004972 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.047452 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000857 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.006180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035764 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000828 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.006083 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032737 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000518 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004443 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.049660 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000533 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004483 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.040665 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000589 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004581 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.038945 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000552 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004690 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.040360 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000540 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004713 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.043820 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000532 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034199 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000536 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004560 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035562 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000527 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.047579 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000552 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004823 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.037707 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000527 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004465 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034101 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000525 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004426 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.038505 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000542 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004498 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.044416 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000536 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.005224 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033485 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000549 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.048796 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000572 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.005034 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.064871 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000571 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.005031 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.060772 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000677 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.006019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.048725 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000719 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.006685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.054837 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000644 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004920 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036083 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000527 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036008 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000540 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004560 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.048823 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000554 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004658 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.037740 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000536 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004445 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.040064 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000544 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.004524 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.047534 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000737 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.006284 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.060865 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000799 seconds
+  ERROR: Build asset version error: assets/scripts/controllers/playercontroller.cs in SourceAssetDB has modification time of '2022-10-16T19:44:59.0198972Z' while content on disk has modification time of '2022-10-16T19:45:08.9629398Z'
+  Import took 0.006455 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004236 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.973 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1394 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.6 MB.
+System memory in use after: 84.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1873.
+Total: 2.110600 ms (FindLiveObjects: 0.171600 ms CreateObjectMapping: 0.060800 ms MarkObjects: 1.788400 ms  DeleteObjects: 0.088200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 5.040508 seconds.
+  path: Assets/Scripts/Controllers/PlayerController.cs
+  artifactKey: Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controllers/PlayerController.cs using Guid(ba4b3b5b7d70f514b9706135c1574fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5e0b703dc0d96681219e0e9cfb1b96c') in 0.004661 seconds
+  Import took 0.007506 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003966 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 8.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  6.125 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1394 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.6 MB.
+System memory in use after: 84.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1876.
+Total: 4.675300 ms (FindLiveObjects: 0.250000 ms CreateObjectMapping: 0.332100 ms MarkObjects: 3.955200 ms  DeleteObjects: 0.135500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008506 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.277 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1394 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.6 MB.
+System memory in use after: 84.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1879.
+Total: 4.317400 ms (FindLiveObjects: 0.279500 ms CreateObjectMapping: 0.087900 ms MarkObjects: 3.821100 ms  DeleteObjects: 0.126600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003636 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.981 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1394 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.6 MB.
+System memory in use after: 84.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1882.
+Total: 2.822900 ms (FindLiveObjects: 0.137800 ms CreateObjectMapping: 0.039100 ms MarkObjects: 2.544700 ms  DeleteObjects: 0.100000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004138 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  6.313 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1394 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.6 MB.
+System memory in use after: 84.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1885.
+Total: 6.484000 ms (FindLiveObjects: 0.340700 ms CreateObjectMapping: 0.123100 ms MarkObjects: 5.864000 ms  DeleteObjects: 0.153100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000

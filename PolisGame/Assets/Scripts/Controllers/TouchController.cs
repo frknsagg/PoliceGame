@@ -11,36 +11,28 @@ public class TouchController : MonoBehaviour,IDragHandler,IPointerDownHandler,IP
     public Vector2 direction;
     public Vector2 rotation;
 
-    public UnityAction OnPointerDownEvent;
-    public UnityAction<Vector3,Vector3> OnPointerDragEvent;
-    public UnityAction OnPointerUpEvent;
+     public UnityAction OnPointerDownEvent;
+     public UnityAction<Vector3,Vector3> OnPointerDragEvent;
+     public UnityAction OnPointerUpEvent;
     
     public void OnPointerDown(PointerEventData eventData)
     {
-        if (OnPointerDownEvent == null) return;
-        OnPointerDownEvent.Invoke();
         _touchPosition = eventData.position;
-        
     }
     
     public void OnDrag(PointerEventData eventData)
     {
-        if (OnPointerDragEvent != null)
-        {
-            var delta = eventData.position - _touchPosition;
-            direction = delta.normalized;
-            rotation = delta.normalized;
-            OnPointerDragEvent.Invoke (direction,rotation) ;
-            Debug.Log("drag çalışıyor");
-        }
-       
+        var delta = eventData.position - _touchPosition;
+        direction = delta.normalized;
+        rotation = delta.normalized;
     }
     
     public void OnPointerUp(PointerEventData eventData)
     {
+        if (OnPointerUpEvent!=null)
+        {
+            OnPointerUpEvent.Invoke();
+        }
         direction = Vector2.zero;
-        OnPointerDragEvent.Invoke (direction,rotation) ;
-        
-        
     }
 }

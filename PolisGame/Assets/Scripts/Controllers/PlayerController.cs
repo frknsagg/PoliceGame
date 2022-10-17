@@ -19,61 +19,64 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        touchController.OnPointerDragEvent += Move;
+       
     }
 
 
-    private void Move(Vector3 direction,Vector3 rotation)
+    private void Move(Vector3 direction)
     {
-         direction = new Vector3(touchController.direction.x,0,touchController.direction.y);
-         rotation = new Vector3(touchController.rotation.x, 0, touchController.rotation.y);
-        _rigidbody.velocity = direction * (moveSpeed * Time.fixedDeltaTime);
-        transform.rotation = Quaternion.LookRotation(rotation, Vector3.up);
+        direction = new Vector3(touchController.direction.x, 0, touchController.direction.y);
+         _rigidbody.velocity = direction * (moveSpeed * Time.fixedDeltaTime);
+       
        
     }
     private void Rotate(Vector3 rotation)
     {
+        rotation = new Vector3(touchController.rotation.x, 0, touchController.rotation.y);
         transform.rotation = Quaternion.LookRotation(rotation, Vector3.up);
     }
     
 
-    // private void FixedUpdate()
-    // {
-    //     
-    //     currentHitObjects.Clear();
-    //     var direction = new Vector3(touchController.direction.x,0,touchController.direction.y);
-    //     var rotation = new Vector3(touchController.rotation.x, 0, touchController.rotation.y);
-    //     
-    //     Move(direction);
-    //     if (direction==Vector3.zero)
-    //     {
-    //         animatorController.IdleAnimation();
-    //         DetectEnemy(transform.position,1.5f);
-    //         _counter += Time.deltaTime;
-    //         _rigidbody.angularVelocity=Vector3.zero;
-    //         if (currentHitObjects.Count>=1 )
-    //         {
-    //             animatorController.FireAnimation();
-    //             if (_counter>=0.5f)
-    //             {
-    //                 Fire();
-    //                 _counter = 0;
-    //             }
-    //         }
-    //     }
-    //     else if(direction!=Vector3.zero)
-    //     {
-    //         animatorController.RunAnimation();
-    //         
-    //         Rotate(rotation);
-    //     }
-    //     else
-    //     {
-    //         _rigidbody.angularVelocity=Vector3.zero;
-    //        
-    //     }
-    //
-    // }
+    private void FixedUpdate()
+    {
+        
+        currentHitObjects.Clear();
+        var direction = new Vector3(touchController.direction.x,0,touchController.direction.y);
+        var rotation = new Vector3(touchController.rotation.x, 0, touchController.rotation.y);
+        
+        Move(direction);
+        Movement(direction, rotation);
+    
+    }
+
+    private void Movement(Vector3 direction, Vector3 rotation)
+    {
+        if (direction == Vector3.zero)
+        {
+            animatorController.IdleAnimation();
+            DetectEnemy(transform.position, 1.5f);
+            _counter += Time.deltaTime;
+            _rigidbody.angularVelocity = Vector3.zero;
+            if (currentHitObjects.Count >= 1)
+            {
+                animatorController.FireAnimation();
+                if (_counter >= 0.5f)
+                {
+                    Fire();
+                    _counter = 0;
+                }
+            }
+        }
+        else if (direction != Vector3.zero)
+        {
+            animatorController.RunAnimation();
+            Rotate(rotation);
+        }
+        else
+        {
+            _rigidbody.angularVelocity = Vector3.zero;
+        }
+    }
 
     // ReSharper disable Unity.PerformanceAnalysis
     private void Fire()
@@ -103,7 +106,10 @@ public class PlayerController : MonoBehaviour
 
     private void DeActivateMovement()
     {
+        _rigidbody.velocity = Vector3.zero;
+        
         
     }
 
+    
 }
