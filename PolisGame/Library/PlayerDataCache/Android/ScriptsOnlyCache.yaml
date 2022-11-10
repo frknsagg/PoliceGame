@@ -12,6 +12,8 @@ ScriptsOnlyBuild:
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.RiderScriptEditorData
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.Timeline.Editor.dll:
+    - TimelinePreferences
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -74,33 +76,33 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1440}
+      Script: {instanceID: 4728}
     - Class: 114
-      Script: {instanceID: 1442}
+      Script: {instanceID: 4742}
     - Class: 114
-      Script: {instanceID: 1472}
+      Script: {instanceID: 4858}
     - Class: 114
-      Script: {instanceID: 1588}
+      Script: {instanceID: 4896}
     - Class: 114
-      Script: {instanceID: 1620}
+      Script: {instanceID: 5528}
     - Class: 114
-      Script: {instanceID: 2194}
+      Script: {instanceID: 5558}
     - Class: 114
-      Script: {instanceID: 2226}
+      Script: {instanceID: 5668}
     - Class: 114
-      Script: {instanceID: 2326}
+      Script: {instanceID: 5830}
     - Class: 114
-      Script: {instanceID: 2646}
+      Script: {instanceID: 6016}
     - Class: 114
-      Script: {instanceID: 2954}
+      Script: {instanceID: 6356}
     - Class: 114
-      Script: {instanceID: 2992}
+      Script: {instanceID: 6394}
     - Class: 114
-      Script: {instanceID: 3050}
+      Script: {instanceID: 6470}
     - Class: 114
-      Script: {instanceID: 3260}
+      Script: {instanceID: 6702}
     - Class: 114
-      Script: {instanceID: 4218}
+      Script: {instanceID: 7730}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -128,18 +130,6 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: a6e561615949734e9f12f9b61661f43e
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Image
-  - hash:
-      serializedVersion: 2
-      Hash: ae83e830e7a90c0aff918c4c2e520825
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: GraphicRaycaster
-  - hash:
-      serializedVersion: 2
       Hash: 5b35b575374bf96fc439922bfaa23d36
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -150,6 +140,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: a6e561615949734e9f12f9b61661f43e
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
   - hash:
       serializedVersion: 2
       Hash: 77aaaaa51f7a8d8ff333a879741e47d2
@@ -230,7 +226,7 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
-      Hash: f1d735cc1a21c3704ab52568f4fbfcf8
+      Hash: 4de78781075c75589cdbaad292fb6cff
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
     className: PlaymodeTestsController
@@ -240,12 +236,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
-  - hash:
-      serializedVersion: 2
-      Hash: 5f170942ee57c7a568f5bcfc7521adea
-    assemblyName: UnityEngine.TestRunner.dll
-    namespaceName: UnityEngine.TestTools
-    className: EnumerableTestState
   - hash:
       serializedVersion: 2
       Hash: 76f95497dc6a533dd87c83c703d435c5
@@ -300,6 +290,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestRunner.Utils
     className: TestRunCallbackListener
+  - hash:
+      serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GraphicRaycaster
   - hash:
       serializedVersion: 2
       Hash: f40fedccd4adbc76605bea6d67537e4b
@@ -600,6 +596,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ThiefAnimationController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyBaseState
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

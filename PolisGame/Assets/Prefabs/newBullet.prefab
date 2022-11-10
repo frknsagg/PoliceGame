@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5046386439204761231}
   m_Layer: 0
   m_Name: newBullet
-  m_TagString: nesne
+  m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
