@@ -16,7 +16,7 @@ MonoBehaviour:
     EnemyTypeDatas:
       m_Keys: 0000000001000000
       m_Values:
-      - Health: 100
+      - Health: 50
         MoveSpeed: 2.12
         AttackRange: 3.93
       - Health: 30

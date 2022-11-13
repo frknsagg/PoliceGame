@@ -6,6 +6,7 @@ TagManager:
   tags:
   - nesne
   - bullet
+  - Robbable
   layers:
   - Default
   - TransparentFX

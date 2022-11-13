@@ -10,15 +10,19 @@ public class HealthBarController : MonoBehaviour
      public Gradient gradient;
      public Image fill;
 
-     private float maxHealth = 100;
+     private float maxHealth;
      private float _currentHealth;
 
      public Transform mLookAt;
      private Transform _localTrans;
+    [SerializeField] private EnemyManager enemyManager;
+
      
- private void Awake()
-    {
-        
+     
+ private void Start()
+ {
+     
+     maxHealth = enemyManager.health;
      SetMaxHealth(maxHealth);
      _currentHealth = maxHealth;
      _localTrans = GetComponent<Transform>();
