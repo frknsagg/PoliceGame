@@ -17,8 +17,18 @@ MonoBehaviour:
       m_Keys: 0000000001000000
       m_Values:
       - Health: 50
-        MoveSpeed: 2.12
-        AttackRange: 3.93
+        Damage: 0
+        walkSpeed: 0.5
+        MoveSpeed: 1
+        AttackRange: 4.23
+        SearchRange: 0
+        FeverFrequency: 0
+        TheftTime: 0
       - Health: 30
+        Damage: 0
+        walkSpeed: 1
         MoveSpeed: 30
         AttackRange: 30
+        SearchRange: 0
+        FeverFrequency: 0
+        TheftTime: 0
