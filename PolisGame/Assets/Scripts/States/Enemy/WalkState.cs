@@ -31,6 +31,7 @@ namespace States.Enemy
         }
         public void Tick()
         {
+            
             if (_destination.HasValue!=true ||Vector3.Distance(_manager.transform.position,
                     _destination.Value) <= _agent.stoppingDistance )
             {
@@ -57,11 +58,12 @@ namespace States.Enemy
         {
             _agent.speed = _walkSpeed;
             _manager.SetTriggerAnim(EnemyAnimationsTypes.Walk);
+            Debug.Log("walk enter");
         }
 
         public void OnExit()
         {
-            Debug.Log("walk exit");
+            
         }
         private void FindRandomDestination()
         {
@@ -70,10 +72,13 @@ namespace States.Enemy
             Vector3 randomPositionVector = new Vector3(randomPositionX, 0, randomPositionZ);
             _destination = new Vector3(randomPositionVector.x, _manager.transform.position.y, randomPositionVector.z);
             _direction = Vector3.Normalize(_destination.Value );
-            Debug.Log(_destination);
+            
             _direction = new Vector3(_direction.x, 0, _direction.z);
              // _lookRotation = Quaternion.LookRotation(_direction);
-             _manager.transform.LookAt(_direction);
+             // _manager.transform.LookAt(_direction);
+             Vector3 relative = _manager.transform.InverseTransformPoint(_direction);
+             float angle = Mathf.Atan2(relative.x, relative.z) * Mathf.Rad2Deg;
+             _manager.transform.Rotate(0, angle, 0);
         }
     }
 }

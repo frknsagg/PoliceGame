@@ -15,6 +15,8 @@ using Random = UnityEngine.Random;
 public class EnemyManager : MonoBehaviour
 {
     public Transform CurrentTarget;
+    public Transform PlayerTarget;
+    public Transform MarketTarget;
     
     private EnemyBaseState _currentState;
     [SerializeField] private ThiefAnimationController thiefAnimationController;
@@ -27,26 +29,32 @@ public class EnemyManager : MonoBehaviour
 
     // private EnemyAttack _enemyAttackState;
 
-    [ShowInInspector] public float health;
+    [ShowInInspector] public float Health;
 
     private EnemyData _data;
     [SerializeField] protected EnemyTypes types;
 
     private Transform _targetArea;
     
-    [SerializeField] private Transform _target;
+    [SerializeField] public Transform _target;
     private float _moveSpeed;
     private float _walkSpeed;
+    private float _attackRange;
+    private float _feverFrequency;
 
     #region States
-
-    private DeathState _deathState;
-    private BirthState _birthState;
-    private MoveStates _moveState;
     private WalkState _walkState;
+    private DeathState _deathState;
+    private ChaseState _chaseState;
+    private RunState _runState;
+    private StealState _stealState;
+    private AttackState _attackState;
     
-
     #endregion
+    
+    [SerializeField] private GameObject mermi;
+    [SerializeField] private Transform bulletSpawn;
+    [SerializeField] float myBulletSpeed;
 
 
 
@@ -54,19 +62,18 @@ public class EnemyManager : MonoBehaviour
     {
         _data = Resources.Load<CD_Enemy>("Data/CD_Enemy").EnemyData;
         types = EnemyTypes.Beginner;
-        health = _data.EnemyTypeDatas[types].Health;
+        Health = _data.EnemyTypeDatas[types].Health;
         _moveSpeed=_data.EnemyTypeDatas[types].MoveSpeed;
         _walkSpeed = _data.EnemyTypeDatas[types].walkSpeed;
-        Debug.Log(_moveSpeed);
+        _attackRange = _data.EnemyTypeDatas[types].AttackRange;
+        _feverFrequency = _data.EnemyTypeDatas[types].FeverFrequency;
+        
         GetReferences();
 
     }
 
     private void Start()
     {
-        SwitchState(EnemyStatesTypes.Run);
-
-
     }
 
     // private void Update()
@@ -79,16 +86,11 @@ public class EnemyManager : MonoBehaviour
     //     }
     //     
     // }
-    private void Update() => _stateMachine.Tick();
-   
-
-    public void SwitchState(EnemyStatesTypes state)
+    private void Update()
     {
-
-
-        // _currentState.EnterState();
+        _stateMachine.Tick();
+        
     }
-
     public void SetTriggerAnim(EnemyAnimationsTypes enemyAnimationsTypes)
     {
 
@@ -97,31 +99,13 @@ public class EnemyManager : MonoBehaviour
 
     public bool GetHealth()
     {
-        return health <= 0;
+        return Health <= 0;
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("bullet"))
-        {
-            OnTakeDamage();
-            Destroy(other.gameObject);
-        }
-
-        if (other.CompareTag("Robbable"))
-        {
-            Debug.Log("dokundu");
-            _target = other.transform;
-            CurrentTarget = _target;
-        }
-       
-    }
-    
     
     public void OnTakeDamage()
     {
-        health -= 10;
-        healthBarController.DecreaseDamage();
+        healthBarController.SetHealth();
     }
 
     void GetReferences()
@@ -131,30 +115,51 @@ public class EnemyManager : MonoBehaviour
         
         // _enemyDeadState = new EnemyDead(ref manager, thiefAnimationController,agent);
         _deathState = new DeathState(manager,agent,thiefAnimationController);
-        _birthState = new BirthState();
-        _moveState  = new MoveStates(manager,agent,_moveSpeed,thiefAnimationController,_target);
         _walkState = new WalkState(manager, agent, _walkSpeed, thiefAnimationController);
-        //
+        _chaseState = new ChaseState(manager,agent,_moveSpeed,thiefAnimationController,_attackRange);
+        _attackState = new AttackState(agent, thiefAnimationController, manager, _attackRange,_feverFrequency);
+        
         
         _stateMachine = new StateMachine();
-         At(_birthState,_moveState,HasAnyTarget());
-         At(_birthState,_walkState,HasTarget());
-         At(_moveState,_walkState,HasTarget());
-         At(_walkState,_moveState,HasAnyTarget());
-        
+        At(_walkState,_chaseState,HasPlayerTarget());
+        At(_chaseState,_attackState,IsPlayerInAttackRange());
+        At(_attackState,_chaseState,HasPlayerTarget());
+        At(_chaseState,_walkState,HasNoTarget());
+        At(_attackState,_walkState,HasNoTarget());
         
         
         
         _stateMachine.AddAnyTransition(_deathState, AmIDead());
-        
-        
-        _stateMachine.SetState(_birthState);
+        _stateMachine.SetState(_walkState);
 
         void At(IState to, IState from, Func<bool> condition) => _stateMachine.AddTransition(to, from, condition);
-        Func<bool> AmIDead() => () => health <= 0;
-        Func<bool> HasAnyTarget() => () => _target != null;
-        Func<bool> HasTarget() => () => _target == null;
+        
+        Func<bool> AmIDead() => () => Health <= 0;
+        Func<bool> HasPlayerTarget() => () =>
+            PlayerTarget != null && DistanceToPlayer() > _attackRange && !_attackState.PlayerExitAttackRange();
+        Func<bool> IsPlayerInAttackRange() => () =>  DistanceToPlayer() <= _attackRange;
+        Func<bool> HasNoTarget() => () => PlayerTarget == null; 
+
     }
 
-    
+    private float DistanceToPlayer()
+    {
+        if (PlayerTarget)
+        {
+            var distance = Vector3.Distance(PlayerTarget.position , transform.position);
+            return distance;
+        }
+        return 100;
+    }
+
+    public void Fire()
+    {
+        GameObject myBulletPrefabClone = Instantiate(mermi, bulletSpawn.position,bulletSpawn.rotation);
+        var myBulletRigidbody = myBulletPrefabClone.GetComponent<Rigidbody>();
+
+        Vector3 vec = (PlayerTarget.position - bulletSpawn.position).normalized;
+        myBulletRigidbody.AddForce(vec.x*myBulletSpeed,0,vec.z*myBulletSpeed,ForceMode.Impulse);
+    }
+
+
 }

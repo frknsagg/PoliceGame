@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,27 +12,22 @@ public class HealthBarController : MonoBehaviour
      public Image fill;
 
      private float maxHealth;
-     private float _currentHealth;
-
+     
      public Transform mLookAt;
      private Transform _localTrans;
-    [SerializeField] private EnemyManager enemyManager;
-
-     
-     
+     [SerializeField] private EnemyManager enemyManager;
+    
  private void Start()
  {
      
-     maxHealth = enemyManager.health;
+     maxHealth = enemyManager.Health;
      SetMaxHealth(maxHealth);
-     _currentHealth = maxHealth;
      _localTrans = GetComponent<Transform>();
-     slider.onValueChanged.AddListener(SetHealth);
+ }
 
-    }
-
- private void SetHealth(float health)
-    {
+ public void SetHealth()
+ {
+     slider.value = enemyManager.Health;
         fill.color = gradient.Evaluate(slider.normalizedValue);
     }
  private void SetMaxHealth(float health)
@@ -41,20 +37,13 @@ public class HealthBarController : MonoBehaviour
 
      fill.color = gradient.Evaluate(1f);
  }
- public  void DecreaseDamage( )
- {
-     _currentHealth -= 10;
-     slider.value = _currentHealth;
-
-    
- }
 
  public void DestroyHealthBar()
  {
      Destroy(gameObject);
  }
 
- private void LateUpdate()
+ private void FixedUpdate()
  {
      if (mLookAt)
      {

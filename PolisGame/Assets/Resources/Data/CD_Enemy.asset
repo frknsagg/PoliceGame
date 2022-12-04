@@ -16,13 +16,13 @@ MonoBehaviour:
     EnemyTypeDatas:
       m_Keys: 0000000001000000
       m_Values:
-      - Health: 50
+      - Health: 10
         Damage: 0
-        walkSpeed: 0.5
+        walkSpeed: 1
         MoveSpeed: 1
-        AttackRange: 4.23
+        AttackRange: 1
         SearchRange: 0
-        FeverFrequency: 0
+        FeverFrequency: 2
         TheftTime: 0
       - Health: 30
         Damage: 0

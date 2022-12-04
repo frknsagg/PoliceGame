@@ -1,15 +1,23 @@
 
 using UnityEngine;
 
-public class BulletController : MonoBehaviour
+namespace Controllers
 {
-   private void Start()
+   public class BulletController : MonoBehaviour,IDamager
    {
-      Invoke(nameof(DestroyGameObject),5);
-   }
+      private void Start()
+      {
+         Invoke(nameof(DestroyGameObject),5);
+      }
 
-   void DestroyGameObject()
-   {
-      Destroy(gameObject);
+      void DestroyGameObject()
+      {
+         Destroy(gameObject);
+      }
+
+      public int Damage()
+      {
+         return 5;
+      }
    }
 }

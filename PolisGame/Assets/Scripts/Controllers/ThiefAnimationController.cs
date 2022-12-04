@@ -11,4 +11,9 @@ public class ThiefAnimationController : MonoBehaviour
     {
         animator.SetTrigger(animTypes.ToString());
     }
+
+    public void ResetAnim(EnemyAnimationsTypes animationsTypes)
+    {
+        animator.ResetTrigger(animationsTypes.ToString());
+    }
 }
