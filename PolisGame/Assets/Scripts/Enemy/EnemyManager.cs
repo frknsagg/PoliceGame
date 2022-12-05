@@ -1,15 +1,12 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using Abstract;
-using Cinemachine;
 using Controllers;
 using Enums;
 using Sirenix.OdinInspector;
 using States.Enemy;
 using UnityEngine;
 using UnityEngine.AI;
-using Random = UnityEngine.Random;
+
 
 
 public class EnemyManager : MonoBehaviour
@@ -22,7 +19,7 @@ public class EnemyManager : MonoBehaviour
     [SerializeField] private ThiefAnimationController thiefAnimationController;
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] internal HealthBarController healthBarController;
-    public bool _inAttack;
+    [SerializeField] private GunController _gunController;
 
     private StateMachine _stateMachine;
    
@@ -33,6 +30,9 @@ public class EnemyManager : MonoBehaviour
 
     private EnemyData _data;
     [SerializeField] protected EnemyTypes types;
+
+    [SerializeField] private GunData _gunData;
+    [SerializeField] private GunTypes _gunTypes;
 
     private Transform _targetArea;
     
@@ -52,9 +52,6 @@ public class EnemyManager : MonoBehaviour
     
     #endregion
     
-    [SerializeField] private GameObject mermi;
-    [SerializeField] private Transform bulletSpawn;
-    [SerializeField] float myBulletSpeed;
 
 
 
@@ -75,17 +72,6 @@ public class EnemyManager : MonoBehaviour
     private void Start()
     {
     }
-
-    // private void Update()
-    // {
-    //     // _currentState.UpdateState();
-    //     if (GetHealth())
-    //     {
-    //         SwitchState(EnemyStatesTypes.Death);
-    //         enabled = false;
-    //     }
-    //     
-    // }
     private void Update()
     {
         _stateMachine.Tick();
@@ -96,12 +82,6 @@ public class EnemyManager : MonoBehaviour
 
         thiefAnimationController.SetAnim(enemyAnimationsTypes);
     }
-
-    public bool GetHealth()
-    {
-        return Health <= 0;
-    }
-
     
     public void OnTakeDamage()
     {
@@ -114,10 +94,10 @@ public class EnemyManager : MonoBehaviour
         var manager = this;
         
         // _enemyDeadState = new EnemyDead(ref manager, thiefAnimationController,agent);
-        _deathState = new DeathState(manager,agent,thiefAnimationController);
+        _deathState = new DeathState(manager,agent,thiefAnimationController,healthBarController);
         _walkState = new WalkState(manager, agent, _walkSpeed, thiefAnimationController);
         _chaseState = new ChaseState(manager,agent,_moveSpeed,thiefAnimationController,_attackRange);
-        _attackState = new AttackState(agent, thiefAnimationController, manager, _attackRange,_feverFrequency);
+        _attackState = new AttackState(agent, thiefAnimationController, manager, _attackRange,_feverFrequency,_gunController);
         
         
         _stateMachine = new StateMachine();
@@ -152,14 +132,7 @@ public class EnemyManager : MonoBehaviour
         return 100;
     }
 
-    public void Fire()
-    {
-        GameObject myBulletPrefabClone = Instantiate(mermi, bulletSpawn.position,bulletSpawn.rotation);
-        var myBulletRigidbody = myBulletPrefabClone.GetComponent<Rigidbody>();
-
-        Vector3 vec = (PlayerTarget.position - bulletSpawn.position).normalized;
-        myBulletRigidbody.AddForce(vec.x*myBulletSpeed,0,vec.z*myBulletSpeed,ForceMode.Impulse);
-    }
+  
 
 
 }

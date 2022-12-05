@@ -12,3 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cb12e6cd442ec9438e478bd29649665, type: 3}
   m_Name: CD_Gun
   m_EditorClassIdentifier: 
+  GunData:
+    GunDatas:
+      m_Keys: 00000000
+      m_Values:
+      - BulletSpeed: 5
+        MaxBulletCount: 20
+        Damage: 3

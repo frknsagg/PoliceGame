@@ -7,5 +7,6 @@ namespace Data.ValueObject
     {
         public float BulletSpeed;
         public float MaxBulletCount;
+        public int Damage;
     }
 }

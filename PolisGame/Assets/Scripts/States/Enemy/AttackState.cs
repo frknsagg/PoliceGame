@@ -13,19 +13,21 @@ namespace States.Enemy
         private float _attackRange;
         private float _feverFrequency;
         private float _fireCounter = 2;
+        private GunController _gunController;
 
         public bool _inAttack;
         public bool PlayerExitAttackRange() => _inAttack;
 
         private RaycastHit _hit;
         
-        public AttackState(NavMeshAgent agent,ThiefAnimationController animator,EnemyManager manager,float attackRange,float feverFrequency)
+        public AttackState(NavMeshAgent agent,ThiefAnimationController animator,EnemyManager manager,float attackRange,float feverFrequency,GunController gunController)
         {
             _agent = agent;
             _thiefAnimationController = animator;
             _manager = manager;
             _attackRange = attackRange;
             _feverFrequency = feverFrequency;
+            _gunController = gunController;
         }
         
         public void Tick()
@@ -40,7 +42,7 @@ namespace States.Enemy
             {
                 _thiefAnimationController.SetAnim(EnemyAnimationsTypes.Attack);
                 _inAttack = true;
-                _manager.Fire();
+                _gunController.Fire();
                 _fireCounter = 0;
             }
                 // _manager.transform.LookAt(_manager.PlayerTarget);

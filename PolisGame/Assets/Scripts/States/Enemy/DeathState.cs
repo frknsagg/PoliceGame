@@ -10,11 +10,13 @@ public class DeathState : IState
     private NavMeshAgent _agent;
     private EnemyManager _manager;
     private ThiefAnimationController _thiefAnimationController;
-    public DeathState(EnemyManager manager,NavMeshAgent agent,ThiefAnimationController thiefAnimationController)
+    private HealthBarController _healthBarController;
+    public DeathState(EnemyManager manager,NavMeshAgent agent,ThiefAnimationController thiefAnimationController,HealthBarController healthBarController)
     {
         _manager = manager;
         _agent = agent;
         _thiefAnimationController = thiefAnimationController;
+        _healthBarController = healthBarController;
     }
     public void Tick()
     {
@@ -26,6 +28,7 @@ public class DeathState : IState
         _manager.gameObject.layer = 0;
         _agent.enabled = false;
         _thiefAnimationController.SetAnim(EnemyAnimationsTypes.Death);
+        _healthBarController.gameObject.SetActive(false);
         
         
     }

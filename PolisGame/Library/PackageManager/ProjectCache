@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638055823679659314
-    m_Hash: 117057475
+      ticks: 638058629464006713
+    m_Hash: 2652058646
   m_LockFileStatus:
     m_FilePath: D:/Unity-Projects/PoliceGame/PolisGame/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638055823686329979
-    m_Hash: 2740482819
+      ticks: 638058629464097560
+    m_Hash: 703061652
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -22,6 +22,89 @@ m_LocalPackages:
 m_ProjectPath: D:/Unity-Projects/PoliceGame/PolisGame/Packages
 m_EditorVersion: 2021.3.14f1 (eee1884e7226)
 m_ResolvedPackages:
+- packageId: com.unity.animation.rigging@1.1.1
+  testable: 0
+  isDirectDependency: 1
+  version: 1.1.1
+  source: 1
+  resolvedPath: D:\Unity-Projects\PoliceGame\PolisGame\Library\PackageCache\com.unity.animation.rigging@1.1.1
+  assetPath: Packages/com.unity.animation.rigging
+  name: com.unity.animation.rigging
+  displayName: Animation Rigging
+  author:
+    name: 
+    email: 
+    url: 
+  category: Animation
+  type: asset
+  description: Animation Rigging toolkit using Unity's Animation C# Jobs
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.1.2-preview
+    - 0.1.4-preview
+    - 0.2.1-preview
+    - 0.2.2-preview
+    - 0.2.3-preview
+    - 0.2.5-preview
+    - 0.2.6-preview
+    - 0.2.7-preview
+    - 0.3.2-preview
+    - 0.3.3-preview
+    - 0.3.4-preview
+    - 1.0.2
+    - 1.0.3
+    - 1.1.0
+    - 1.1.1
+    - 1.2.0
+    compatible:
+    - 1.1.1
+    - 1.2.0
+    verified: 1.1.1
+  dependencies:
+  - name: com.unity.burst
+    version: 1.4.1
+  - name: com.unity.test-framework
+    version: 1.1.24
+  resolvedDependencies:
+  - name: com.unity.burst
+    version: 1.7.3
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.test-framework
+    version: 1.1.33
+  - name: com.unity.ext.nunit
+    version: 1.0.6
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  keywords:
+  - Animation
+  - Rigging
+  - Constraints
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 637654220820000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.animation.rigging.git
+    revision: 10dba535768924f8d1af27adcce2a1ff06c44474
+    path: 
+  unityLifecycle:
+    version: 1.1.1
+    nextVersion: 
 - packageId: com.unity.cinemachine@2.8.9
   testable: 0
   isDirectDependency: 1
@@ -374,9 +457,11 @@ m_ResolvedPackages:
     - 3.0.14
     - 3.0.15
     - 3.0.16
+    - 3.0.17
     compatible:
     - 3.0.16
-    verified: 3.0.16
+    - 3.0.17
+    verified: 3.0.17
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6

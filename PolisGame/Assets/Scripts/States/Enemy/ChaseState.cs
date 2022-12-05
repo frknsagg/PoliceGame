@@ -46,6 +46,7 @@ namespace States.Enemy
 
         public void OnExit()
         {
+            _thiefAnimationController.ResetAnim(EnemyAnimationsTypes.Run);
             _agent.SetDestination(_manager.transform.position);
         }
         private void CheckAttackDistance()
