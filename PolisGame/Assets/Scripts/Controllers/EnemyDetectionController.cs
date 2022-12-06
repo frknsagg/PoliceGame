@@ -1,29 +1,36 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyDetectionController : MonoBehaviour
+namespace Controllers
 {
-    private EnemyManager _manager;
-    private void Awake()
+    public class EnemyDetectionController : MonoBehaviour
     {
-        _manager = gameObject.GetComponentInParent<EnemyManager>();
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.TryGetComponent(out PlayerPhysicsController player))
+        private EnemyManager _manager;
+        private void Awake()
         {
-            _manager.PlayerTarget = player.transform;
+            _manager = gameObject.GetComponentInParent<EnemyManager>();
         }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
+        private void OnTriggerEnter(Collider other)
         {
-            _manager.PlayerTarget = null;
-            Debug.Log("enemy çıktı");
+            if (other.TryGetComponent(out PlayerPhysicsController player))
+            {
+                _manager.PlayerTarget = player.transform;
+            }
+            if (other.TryGetComponent(out NPCManager manager))
+            {
+                _manager.RobbableTargets.Add(manager.transform);
+            }
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            if (other.TryGetComponent(out PlayerPhysicsController player))
+            {
+                _manager.PlayerTarget = null;
+            }
+            if (other.TryGetComponent(out NPCManager manager))
+            {
+                _manager.RobbableTargets.Remove(manager.transform);
+            }
         }
     }
 }

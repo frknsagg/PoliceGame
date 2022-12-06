@@ -28,10 +28,19 @@ namespace States.Enemy
         }
         public void Tick()
         {
-            _agent.SetDestination(_manager.PlayerTarget.position);
-            _manager.transform.LookAt(_manager.PlayerTarget.position);
+            if (_manager.PlayerTarget)
+            {
+                _agent.SetDestination(_manager.PlayerTarget.position);
+                _manager.transform.LookAt(_manager.PlayerTarget.position);
            
-            CheckAttackDistance();
+                CheckAttackDistance();
+            }
+            else
+            {
+                _agent.SetDestination(_manager.RobbableTargets[0].position);
+                _manager.transform.LookAt(_manager.RobbableTargets[0].position);
+            }
+           
         }
 
         public void OnEnter()

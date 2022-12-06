@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Interfaces;
 using UnityEngine;
 
 public class EnemyPhysicsController : MonoBehaviour,IDamageable
@@ -18,11 +19,6 @@ public class EnemyPhysicsController : MonoBehaviour,IDamageable
             Destroy(other.gameObject);
             TakeDamage(damager.Damage());
             _manager.OnTakeDamage();
-            
-        }
-
-        if (other.CompareTag("Robbable"))
-        {
         }
     }
     

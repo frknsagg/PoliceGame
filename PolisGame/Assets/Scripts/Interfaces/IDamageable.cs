@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public interface IDamageable
+namespace Interfaces
 {
- float TakeDamage(int damage);
+ public interface IDamageable
+ {
+  float TakeDamage(int damage);
+ }
 }

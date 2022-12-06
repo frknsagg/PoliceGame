@@ -58,12 +58,11 @@ namespace States.Enemy
         {
             _agent.speed = _walkSpeed;
             _manager.SetTriggerAnim(EnemyAnimationsTypes.Walk);
-            Debug.Log("walk enter");
         }
 
         public void OnExit()
         {
-            
+            _destination = null;
         }
         private void FindRandomDestination()
         {
@@ -74,11 +73,8 @@ namespace States.Enemy
             _direction = Vector3.Normalize(_destination.Value );
             
             _direction = new Vector3(_direction.x, 0, _direction.z);
-             // _lookRotation = Quaternion.LookRotation(_direction);
-             // _manager.transform.LookAt(_direction);
-             Vector3 relative = _manager.transform.InverseTransformPoint(_direction);
-             float angle = Mathf.Atan2(relative.x, relative.z) * Mathf.Rad2Deg;
-             _manager.transform.Rotate(0, angle, 0);
+            
         }
+      
     }
 }

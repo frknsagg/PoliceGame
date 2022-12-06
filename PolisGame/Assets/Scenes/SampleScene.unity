@@ -2235,11 +2235,6 @@ Transform:
   m_Father: {fileID: 1026383882}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &661484778 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 950687496722512595, guid: 270a1ac214a048940b2d2a5cd6208af4, type: 3}
-  m_PrefabInstance: {fileID: 950687497181040185}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2334,11 +2329,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!4 &721332696 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 950687496799201249, guid: 270a1ac214a048940b2d2a5cd6208af4, type: 3}
-  m_PrefabInstance: {fileID: 950687497181040185}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &744913292
 GameObject:
   m_ObjectHideFlags: 0
@@ -4779,7 +4769,7 @@ MonoBehaviour:
     m_Root: {fileID: 5140536838084480148}
     m_Mid: {fileID: 1001671063665753556}
     m_Tip: {fileID: 4147871048610681885}
-    m_Target: {fileID: 661484778}
+    m_Target: {fileID: 1957194564}
     m_Hint: {fileID: 0}
     m_TargetPositionWeight: 1
     m_TargetRotationWeight: 1
@@ -5808,7 +5798,7 @@ MonoBehaviour:
     m_Root: {fileID: 7175317598363768630}
     m_Mid: {fileID: 5898656338653167702}
     m_Tip: {fileID: 8106838462068295129}
-    m_Target: {fileID: 721332696}
+    m_Target: {fileID: 301003132}
     m_Hint: {fileID: 0}
     m_TargetPositionWeight: 1
     m_TargetRotationWeight: 1
@@ -6565,7 +6555,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &70044318042419200
 Transform:
   m_ObjectHideFlags: 0
@@ -6909,6 +6899,10 @@ PrefabInstance:
     - target: {fileID: 139872088251998251, guid: 270a1ac214a048940b2d2a5cd6208af4, type: 3}
       propertyPath: m_Name
       value: M4A1
+      objectReference: {fileID: 0}
+    - target: {fileID: 139872088251998251, guid: 270a1ac214a048940b2d2a5cd6208af4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 773278010038090385, guid: 270a1ac214a048940b2d2a5cd6208af4, type: 3}
       propertyPath: m_RootOrder
