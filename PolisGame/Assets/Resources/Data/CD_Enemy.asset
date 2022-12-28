@@ -23,7 +23,7 @@ MonoBehaviour:
         AttackRange: 2
         SearchRange: 0
         FeverFrequency: 2
-        TheftTime: 0
+        TheftTime: 5
       - Health: 30
         Damage: 0
         walkSpeed: 1

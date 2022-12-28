@@ -1,4 +1,5 @@
 using Controllers;
+using Enums;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -6,6 +7,8 @@ namespace States.Enemy
 {
     public class ChaseState : IState
     {
+        private EnemyData _data;
+        private EnemyTypes _types;
         private EnemyManager _manager;
         private float _moveSpeed;
         private ThiefAnimationController _thiefAnimationController;
@@ -17,13 +20,14 @@ namespace States.Enemy
         public bool IsPlayerInRange() => attackOnPlayer;
     
     
-        public ChaseState(EnemyManager manager,NavMeshAgent agent,float moveSpeed,ThiefAnimationController thiefAnimationController,float attackRange)
+        public ChaseState(EnemyManager manager,NavMeshAgent agent,float moveSpeed,ThiefAnimationController thiefAnimationController,EnemyData data,EnemyTypes types)
         {
             _manager = manager;
             _agent = agent;
             _moveSpeed = moveSpeed;
             _thiefAnimationController = thiefAnimationController;
-            _attackRange = attackRange;
+            _data = data;
+            _types = types;
 
         }
         public void Tick()
@@ -35,22 +39,18 @@ namespace States.Enemy
            
                 CheckAttackDistance();
             }
-            else
-            {
-                _agent.SetDestination(_manager.RobbableTargets[0].position);
-                _manager.transform.LookAt(_manager.RobbableTargets[0].position);
-            }
-           
+
         }
 
         public void OnEnter()
         {
             Debug.Log("chase enter");
-           
-            _agent.enabled = true;
-            _agent.speed = _moveSpeed;
-            attackOnPlayer = false;
             _thiefAnimationController.SetAnim(EnemyAnimationsTypes.Run);
+            _agent.enabled = true;
+            _agent.speed = _data.EnemyTypeDatas[_types].MoveSpeed;
+            _attackRange = _data.EnemyTypeDatas[_types].AttackRange;
+            attackOnPlayer = false;
+            
         }
 
         public void OnExit()

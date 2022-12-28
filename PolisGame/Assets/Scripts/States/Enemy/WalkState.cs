@@ -1,4 +1,5 @@
 using Controllers;
+using Enums;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -6,9 +7,8 @@ namespace States.Enemy
 {
     public class WalkState : IState
     {
-        private readonly bool _anyTarget = false;
-        public bool ATarget() => _anyTarget;
-        
+        private EnemyData _data;
+        private EnemyTypes _types;
         private EnemyManager _manager;
         private NavMeshAgent _agent;
         private float _walkSpeed;
@@ -22,12 +22,14 @@ namespace States.Enemy
         
         
        
-        public WalkState(EnemyManager manager, NavMeshAgent agent, float walkSpeed,ThiefAnimationController thiefAnimationController)
+        public WalkState(EnemyManager manager, NavMeshAgent agent, EnemyData data,EnemyTypes types)
         {
             _manager = manager;
             _agent = agent;
-            _walkSpeed = walkSpeed;
-            _thiefAnimationController = thiefAnimationController;
+            _data = data;
+            _types = types;
+
+
         }
         public void Tick()
         {
@@ -43,11 +45,12 @@ namespace States.Enemy
                 _timeStack += Time.deltaTime;
                 if (_timeStack > 1f)
                 {
-                    _manager.transform.rotation = Quaternion.Lerp(_manager.transform.rotation, _lookRotation, 0.2f);
+                    _manager.transform.rotation = Quaternion.Lerp(_manager.transform.rotation, _lookRotation, 0.5f);
                     _timeStack = 0;
                 }
                 else
                 {
+                    _destination = null;
                     FindRandomDestination();
                 }
             }
@@ -56,7 +59,8 @@ namespace States.Enemy
 
         public void OnEnter()
         {
-            _agent.speed = _walkSpeed;
+            _agent.enabled = true;
+            _agent.speed = _data.EnemyTypeDatas[_types].walkSpeed;
             _manager.SetTriggerAnim(EnemyAnimationsTypes.Walk);
         }
 
@@ -71,9 +75,8 @@ namespace States.Enemy
             Vector3 randomPositionVector = new Vector3(randomPositionX, 0, randomPositionZ);
             _destination = new Vector3(randomPositionVector.x, _manager.transform.position.y, randomPositionVector.z);
             _direction = Vector3.Normalize(_destination.Value );
-            
+
             _direction = new Vector3(_direction.x, 0, _direction.z);
-            
         }
       
     }

@@ -1,34 +1,36 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
+using Enums;
 using Interfaces;
+using Signals;
 using UnityEngine;
 
-public class PlayerPhysicsController : MonoBehaviour,IDamageable
+namespace Controllers.Player
 {
-    [SerializeField] private PlayerController playerController;
-
-
-    private void OnTriggerEnter(Collider other)
+    public class PlayerPhysicsController : MonoBehaviour,IDamageable
     {
-        if (other.TryGetComponent(out IDamager damager))
+        [SerializeField] private PlayerController playerController;
+        private void OnTriggerEnter(Collider other)
         {
-            TakeDamage(damager.Damage());
-            Destroy(other.gameObject);
-        }
-    }
-
-    public float TakeDamage(int damage)
-    {
-        if (playerController.Health > 0)
-        {
-            playerController.Health -= damage;
-            if (playerController.Health<=0)
+            if (other.TryGetComponent(out IDamager damager))
             {
-                gameObject.layer = 0;
+                TakeDamage(damager.Damage());
+                PoolSignals.Instance.onReleasePoolObject?.Invoke(PoolType.Bullet,other.gameObject);
+                Destroy(other.gameObject);
             }
-            return playerController.Health;
         }
-        return 0;
+
+        public float TakeDamage(int damage)
+        {
+            if (playerController.Health > 0)
+            {
+                playerController.Health -= damage;
+                if (playerController.Health<=0)
+                {
+                    gameObject.layer = 0;
+                }
+                return playerController.Health;
+            }
+            return 0;
+        }
     }
 }

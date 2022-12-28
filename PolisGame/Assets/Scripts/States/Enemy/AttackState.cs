@@ -1,5 +1,6 @@
 using System;
 using Controllers;
+using Enums;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -7,6 +8,8 @@ namespace States.Enemy
 {
     public class AttackState : IState
     {
+        private EnemyData _data;
+        private EnemyTypes _types;
         private NavMeshAgent _agent;
         private ThiefAnimationController _thiefAnimationController;
         private EnemyManager _manager;
@@ -20,13 +23,13 @@ namespace States.Enemy
 
         private RaycastHit _hit;
         
-        public AttackState(NavMeshAgent agent,ThiefAnimationController animator,EnemyManager manager,float attackRange,float feverFrequency,GunController gunController)
+        public AttackState(NavMeshAgent agent,ThiefAnimationController animator,EnemyManager manager,GunController gunController,EnemyData data,EnemyTypes types)
         {
             _agent = agent;
             _thiefAnimationController = animator;
             _manager = manager;
-            _attackRange = attackRange;
-            _feverFrequency = feverFrequency;
+            _data = data;
+            _types = types;
             _gunController = gunController;
         }
         
@@ -67,6 +70,8 @@ namespace States.Enemy
             Debug.Log("atack enter");
             _thiefAnimationController.SetAnim(EnemyAnimationsTypes.Attack);
             _agent.speed = 0;
+            _feverFrequency = _data.EnemyTypeDatas[_types].FeverFrequency;
+            _attackRange = _data.EnemyTypeDatas[_types].AttackRange;
         }
 
         public void OnExit()

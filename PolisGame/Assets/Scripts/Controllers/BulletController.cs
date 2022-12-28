@@ -1,37 +1,35 @@
-
-using Data.ValueObject;
 using Enums;
+using Signals;
 using UnityEngine;
 
 namespace Controllers
 {
    public class BulletController : MonoBehaviour,IDamager
    {
-      private GunData gunData;
+      private GunData _gunData;
 
       private GunTypes _gunTypes;
 
       private int _damage;
-      private void Start()
+      private void OnEnable()
       {
-         Invoke(nameof(DestroyGameObject),5);
-        
+         Invoke(nameof(ReleaseBullet),2);
       }
 
-      void DestroyGameObject()
+      void ReleaseBullet()
       {
-         Destroy(gameObject);
+         PoolSignals.Instance.onReleasePoolObject?.Invoke(PoolType.Bullet,gameObject);
       }
 
       public void SetGunTypeData(GunTypes gunSpecs,GunData gunData)
       {
-         this.gunData = gunData;
+         _gunData = gunData;
          _gunTypes = gunSpecs;
       }
 
       public int Damage()
       {
-         return gunData.GunDatas[_gunTypes].Damage;
+         return _gunData.GunDatas[_gunTypes].Damage;
       }
    }
 }
