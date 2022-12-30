@@ -2,26 +2,27 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Controllers;
+using Controllers.Player;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private TouchController touchController;
     [SerializeField] private CharacterAnimationController animatorController;
-    [SerializeField] private Rigidbody _rigidbody;
+    [SerializeField] private Rigidbody rb;
     [SerializeField] private float moveSpeed;
     [SerializeField] private LayerMask layerMask;
     public int Health;
     private float _counter;
 
-    [SerializeField] private GunController _gunController;
+    [SerializeField] private GunController gunController;
     
-    public List<GameObject> currentHitObjects = new List<GameObject>();
+    public List<GameObject> currentHitObjects = new();
     
     private void Move(Vector3 direction)
     {
         direction = new Vector3(touchController.direction.x, 0, touchController.direction.y);
-         _rigidbody.velocity = direction * (moveSpeed * Time.fixedDeltaTime);
+         rb.velocity = direction * (moveSpeed * Time.fixedDeltaTime);
        
        
     }
@@ -51,7 +52,7 @@ public class PlayerController : MonoBehaviour
             animatorController.IdleAnimation();
             DetectEnemy(transform.position, 2.5f);
             _counter += Time.deltaTime;
-            _rigidbody.angularVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
             if (currentHitObjects.Count >= 1)
             {
                 animatorController.FireAnimation();
@@ -69,7 +70,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            _rigidbody.angularVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
         }
     }
 
@@ -82,7 +83,7 @@ public class PlayerController : MonoBehaviour
         
         //------------------Bullet Section-------
       
-        _gunController.Fire();
+        gunController.Fire();
 
     }
 
@@ -98,10 +99,12 @@ public class PlayerController : MonoBehaviour
 
     private void DeActivateMovement()
     {
-        _rigidbody.velocity = Vector3.zero;
+        rb.velocity = Vector3.zero;
         
         
     }
+
+  
 
 
 }

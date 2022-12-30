@@ -12,11 +12,13 @@ namespace Controllers
 
         [SerializeField] private GameObject player;
         private  float _myBulletSpeed;
+        public int _bulletCount;
         private void Awake()
         {
             _gunData = Resources.Load<CD_Gun>("Data/CD_Gun").GunData;
             _gunTypes = GunTypes.Ak47;
             _myBulletSpeed = _gunData.GunDatas[_gunTypes].BulletSpeed;
+            _bulletCount = _gunData.GunDatas[_gunTypes].MaxBulletCount;
         }
         private void SendDataToControllers()
         {
@@ -35,6 +37,7 @@ namespace Controllers
             rbVelocity.x = transform.forward.normalized.x * _myBulletSpeed;
             rbVelocity.z = transform.forward.normalized.z * _myBulletSpeed;
             obj.GetComponent<Rigidbody>().velocity = rbVelocity;
+            _bulletCount--;
         }
     }
 }

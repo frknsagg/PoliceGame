@@ -1,3 +1,4 @@
+using Enemy;
 using Enums;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,6 +21,7 @@ namespace Controllers
     
         private void OnEnable()
         {
+            
             maxHealth = _data.EnemyTypeDatas[_types].Health;
             SetMaxHealth(maxHealth);
             _localTrans = GetComponent<Transform>();

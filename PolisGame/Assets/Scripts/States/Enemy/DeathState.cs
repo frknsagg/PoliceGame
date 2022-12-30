@@ -1,5 +1,6 @@
 using Controllers;
 using DG.Tweening;
+using Enemy;
 using Enums;
 using Signals;
 using UnityEngine;

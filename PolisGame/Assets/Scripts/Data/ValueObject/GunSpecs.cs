@@ -6,7 +6,7 @@ namespace Data.ValueObject
     public class GunSpecs
     {
         public float BulletSpeed;
-        public float MaxBulletCount;
+        public int MaxBulletCount;
         public int Damage;
     }
 }

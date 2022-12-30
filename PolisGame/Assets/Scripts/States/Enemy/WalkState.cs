@@ -1,4 +1,5 @@
 using Controllers;
+using Enemy;
 using Enums;
 using UnityEngine;
 using UnityEngine.AI;

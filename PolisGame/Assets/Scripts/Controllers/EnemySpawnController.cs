@@ -1,25 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using Enums;
 using Signals;
 using UnityEngine;
 
-public class EnemySpawnController : MonoBehaviour
+namespace Controllers
 {
-    // Start is called before the first frame update
-    void Start()
+    public class EnemySpawnController : MonoBehaviour
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-     [ContextMenu("SpawnEnemy")]
-    public void SpawnEnemy()
-    {
-        PoolSignals.Instance.onGetPoolObject?.Invoke(PoolType.AmateurRobber.ToString(), this.transform);
+        [ContextMenu("SpawnEnemy")]
+        public void SpawnEnemy()
+        {
+            PoolSignals.Instance.onGetPoolObject?.Invoke(PoolType.AmateurRobber.ToString(), this.transform);
+        }
     }
 }

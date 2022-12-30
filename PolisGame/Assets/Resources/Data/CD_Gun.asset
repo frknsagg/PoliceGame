@@ -17,5 +17,5 @@ MonoBehaviour:
       m_Keys: 00000000
       m_Values:
       - BulletSpeed: 5
-        MaxBulletCount: 20
-        Damage: 3
+        MaxBulletCount: 30
+        Damage: 30
