@@ -30,15 +30,15 @@ namespace Controllers.Player
 
         public float TakeDamage(int damage)
         {
-            if (playerController.Health > 0)
+            if (playerManager.Health > 0)
             {
-                playerController.Health -= damage;
-                if (playerController.Health<=0)
+                playerManager.Health -= damage;
+                if (playerManager.Health<=0)
                 {
                     gameObject.layer = 0;
                     CoreGameSignals.Instance.onLevelFailed?.Invoke();
                 }
-                return playerController.Health;
+                return playerManager.Health;
             }
             return 0;
         }

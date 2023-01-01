@@ -61,6 +61,7 @@ namespace States.Enemy
                     _manager.RobbableTargets.RemoveAt(0);
                     _stealBar.SetHealth(0);
                     _stealBar.gameObject.SetActive(false);
+                    CoreGameSignals.Instance.onStealFinish?.Invoke();
                 }
             }
         }
@@ -81,7 +82,7 @@ namespace States.Enemy
             _thiefAnimationController.ResetAnim(EnemyAnimationsTypes.Idle);
             _stealBar.SetHealth(0);
             _stealBar.gameObject.SetActive(false);
-            CoreGameSignals.Instance.onStealFinish?.Invoke();
+            
         }
 
         private void CheckAttackDistance()

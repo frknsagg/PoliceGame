@@ -1,29 +1,31 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class CircleLineController : MonoBehaviour
+namespace Controllers.Player
 {
-  public LineRenderer circleRenderer;
-    void Start()
+    public class CircleLineController : MonoBehaviour
     {
-       DrawCircle(101,5f); 
-    }
+        public LineRenderer circleRenderer;
 
-    void DrawCircle(int steps, float radius)
-    {
-        circleRenderer.positionCount = steps;
-
-        for (int currentStep = 0; currentStep < steps; currentStep++)
+       public void Init(float radius)
         {
-            float circumferenceProgress = (float) currentStep / steps;
-            float currentRadian = circumferenceProgress * 2 * Mathf.PI;
-            float xScaled = Mathf.Cos(currentRadian);
-            float yScaled = Mathf.Sin(currentRadian);
-            float x = xScaled * radius;
-            float y = yScaled * radius;
-            Vector3 currentPosition = new Vector3(x, y, 0);
-            circleRenderer.SetPosition(currentStep,currentPosition);
+            DrawCircle(101, radius);
+        }
+
+        void DrawCircle(int steps, float radius)
+        {
+            circleRenderer.positionCount = steps;
+
+            for (int currentStep = 0; currentStep < steps; currentStep++)
+            {
+                float circumferenceProgress = (float)currentStep / steps;
+                float currentRadian = circumferenceProgress * 2 * Mathf.PI;
+                float xScaled = Mathf.Cos(currentRadian);
+                float yScaled = Mathf.Sin(currentRadian);
+                float x = xScaled * radius;
+                float y = yScaled * radius;
+                Vector3 currentPosition = new Vector3(x, y, 0);
+                circleRenderer.SetPosition(currentStep, currentPosition);
+            }
         }
     }
 }

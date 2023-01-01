@@ -2,6 +2,7 @@ using Controllers;
 using DG.Tweening;
 using Enemy;
 using Enums;
+using Managers;
 using Signals;
 using UnityEngine;
 using UnityEngine.AI;
@@ -43,6 +44,7 @@ namespace States.Enemy
             _thiefAnimationController.SetAnim(EnemyAnimationsTypes.Death);
             DropMoney();
             _manager.PlayerTarget = null;
+            LevelManager.Instance.enemyList.Remove(_manager.gameObject);
         }
 
         public void OnExit()

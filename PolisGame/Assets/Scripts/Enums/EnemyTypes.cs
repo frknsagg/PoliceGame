@@ -2,6 +2,6 @@ namespace Enums
 {
     public enum EnemyTypes
     {
-        Beginner,Professional
+        AmateurRobber,Professional
     }
 }

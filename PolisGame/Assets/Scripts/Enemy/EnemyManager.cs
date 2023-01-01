@@ -23,6 +23,7 @@ namespace Enemy
         [SerializeField] internal HealthBarController healthBarController;
         [SerializeField] internal StealBarController stealBarController;
         [SerializeField] private GunController _gunController;
+        [SerializeField] private GameObject gun;
 
         private StateMachine _stateMachine;
 
@@ -66,7 +67,7 @@ namespace Enemy
 
         private void OnEnable()
         {
-            types = EnemyTypes.Beginner;
+            types = EnemyTypes.AmateurRobber;
             Health = _data.EnemyTypeDatas[types].Health;
             _attackRange = _data.EnemyTypeDatas[types].AttackRange;
             _stateMachine.SetState(_walkState);
@@ -99,10 +100,10 @@ namespace Enemy
             var manager = this;
             _data = Resources.Load<CD_Enemy>("Data/CD_Enemy").EnemyData;
             _deathState = new DeathState(manager, agent, thiefAnimationController, healthBarController);
-            _walkState = new WalkState(manager, agent, _data, types);
+            _walkState = new WalkState(manager, agent, _data, types,rigBuilder,gun);
             _chaseState = new ChaseState(manager, agent, _moveSpeed, thiefAnimationController, _data, types);
             _attackState = new AttackState(agent, thiefAnimationController, manager,
-                _gunController, _data, types);
+                _gunController, _data, types,rigBuilder,gun);
             _stealState = new StealState(manager, agent, thiefAnimationController, rigBuilder,
                 stealBarController, _data, types);
 

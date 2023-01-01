@@ -1,19 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
-using Controllers;
 using UnityEngine;
 
-public class ThiefAnimationController : MonoBehaviour
+namespace Controllers
 {
-    [SerializeField] private Animator animator;
-    
-    public void SetAnim(EnemyAnimationsTypes animTypes)
+    public class ThiefAnimationController : MonoBehaviour
     {
-        animator.SetTrigger(animTypes.ToString());
-    }
+        [SerializeField] private Animator animator;
 
-    public void ResetAnim(EnemyAnimationsTypes animationsTypes)
-    {
-        animator.ResetTrigger(animationsTypes.ToString());
+        public void SetAnim(EnemyAnimationsTypes animTypes)
+        {
+            animator.SetTrigger(animTypes.ToString());
+        }
+
+        public void ResetAnim(EnemyAnimationsTypes animationsTypes)
+        {
+            animator.ResetTrigger(animationsTypes.ToString());
+        }
     }
 }

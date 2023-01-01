@@ -16,15 +16,13 @@ namespace Controllers
         private float maxHealth;
      
         public Transform mLookAt;
-        private Transform _localTrans;
         [SerializeField] private EnemyManager enemyManager;
     
         private void OnEnable()
-        {
-            
+        { 
             maxHealth = _data.EnemyTypeDatas[_types].Health;
             SetMaxHealth(maxHealth);
-            _localTrans = GetComponent<Transform>();
+            
         }
 
         public void SetHealth()
@@ -50,7 +48,7 @@ namespace Controllers
         {
             if (mLookAt)
             {
-                _localTrans.LookAt(2*_localTrans.position-mLookAt.position);
+                transform.LookAt(2*transform.position-mLookAt.position);
             }
         }
     }

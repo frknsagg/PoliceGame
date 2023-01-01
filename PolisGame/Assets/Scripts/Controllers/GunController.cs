@@ -1,3 +1,4 @@
+using Data.UnityObjects;
 using Enums;
 using Signals;
 using UnityEngine;
@@ -29,9 +30,9 @@ namespace Controllers
         public void Fire()
         {
             GameObject obj = PoolSignals.Instance.onGetPoolObject?.Invoke(PoolType.Bullet.ToString(), transform);
-            var transformRotation = obj.transform.rotation;
-            transformRotation.y = player.transform.rotation.y;
-            obj.transform.rotation = transformRotation;
+            var transformEuler = obj.transform.eulerAngles;
+            transformEuler.y = player.transform.eulerAngles.y;
+            obj.transform.eulerAngles = transformEuler;
             obj.GetComponent<BulletController>().SetGunTypeData(_gunTypes,_gunData);
             var rbVelocity = obj.GetComponent<Rigidbody>().velocity;
             rbVelocity.x = transform.forward.normalized.x * _myBulletSpeed;

@@ -6,10 +6,10 @@ using UnityEngine;
 
 namespace Managers
 {
-    public class CollectableManager : MonoBehaviour,ICollectable
+    public class CollectableManager : MonoBehaviour, ICollectable
     {
-        [SerializeField] private MoneyData moneyData;
-        [SerializeField] private CollectableTypes collectableTypes;
+        private MoneyData moneyData;
+        private CollectableTypes collectableTypes;
 
         private void OnEnable()
         {

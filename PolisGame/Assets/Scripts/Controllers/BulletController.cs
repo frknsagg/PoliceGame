@@ -18,7 +18,7 @@ namespace Controllers
       private int _damage;
       private void OnEnable()
       {
-         Invoke(nameof(ReleaseBullet),2);
+         // Invoke(nameof(ReleaseBullet),2);
          particleSystem.Play();
       }
 
