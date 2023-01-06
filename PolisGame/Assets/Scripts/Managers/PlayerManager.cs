@@ -46,11 +46,13 @@ namespace Managers
         {
             CoreGameSignals.Instance.onLevelFailed += Death;
             CoreGameSignals.Instance.onLevelStart += OnLevelStart;
+            LevelSignals.Instance.onLevelCompleted += OnLevelCompleted;
         }
         private void UnSubscribeEvents()
         {
             CoreGameSignals.Instance.onLevelFailed -= Death;
             CoreGameSignals.Instance.onLevelStart -= OnLevelStart;
+            LevelSignals.Instance.onLevelCompleted -= OnLevelCompleted;
         }
 
         private void Death()
@@ -70,6 +72,13 @@ namespace Managers
         private void OnLevelStart()
         {
             player.SetActive(true);
+        }
+
+        private void OnLevelCompleted()
+        {
+            PrefsManager.Instance.SaveMoney(collectedMoney);
+            collectedMoney = 0;
+            player.SetActive(false);
         }
     }
 }

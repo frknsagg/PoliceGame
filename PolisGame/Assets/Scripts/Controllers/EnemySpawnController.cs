@@ -33,8 +33,6 @@ namespace Controllers
             {
                 finalPosition = hit.position;
             }
-
-            Debug.Log(finalPosition);
             return finalPosition;
         }
 

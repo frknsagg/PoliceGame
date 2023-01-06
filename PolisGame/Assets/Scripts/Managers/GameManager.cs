@@ -10,9 +10,10 @@ namespace Managers
     {
         [SerializeField] private Slider securitySlider;
         public int _securityLevel;
-        public int SecurityLevel { get; private set; }
+        public float SecurityLevel { get; private set; }
         [SerializeField] private Button startButton;
         public bool isGameStart;
+       
 
         private void Awake()
         {
@@ -56,7 +57,7 @@ namespace Managers
 
         void OnLevelStart()
         {
-            SecurityLevel = 100;
+            SecurityLevel = PrefsManager.Instance.GetSecurityLevel();
             securitySlider.maxValue = SecurityLevel;
             securitySlider.value = SecurityLevel;
         }
@@ -72,6 +73,7 @@ namespace Managers
         {
             startButton.gameObject.SetActive(true);
             isGameStart = false;
+            PrefsManager.Instance.SaveSecurityLevel(SecurityLevel);
         }
     }
 }

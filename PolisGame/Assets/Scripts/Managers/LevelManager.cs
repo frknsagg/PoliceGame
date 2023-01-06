@@ -32,13 +32,8 @@ namespace Managers
         {
             SubscribeEvents();
             _levelData = Resources.Load<CD_Level>("Data/CD_Level").LevelData;
-            // _types = _levelData.levelData.DeserializeKey(0);
-            // count = _levelData.levelData[_types];
-            var b = _levelId % _levelData.levelData.Count;
-            _levelInfo = _levelData.levelData[b].data;
-            _types = _levelInfo.DeserializeKey(0);
-            count = _levelInfo[_types];
-            Debug.Log(_levelInfo.Count);
+            
+            
         }
 
         void SubscribeEvents()
@@ -69,7 +64,11 @@ namespace Managers
 
         void GetLevelData()
         {
-            Debug.Log($"type: {_types} ve sayısı: {count}");
+            _levelId = PrefsManager.Instance.GetLevelID();
+            var b = _levelId % _levelData.levelData.Count;
+            _levelInfo = _levelData.levelData[b].data;
+            _types = _levelInfo.DeserializeKey(0);
+            count = _levelInfo[_types];
             LevelSignals.Instance.onLevelCreate?.Invoke(_types, count);
             StartCoroutine(DayCompleteController());
         }
@@ -91,6 +90,7 @@ namespace Managers
         {
             Debug.Log("level bitti");
             _levelId++;
+           PrefsManager.Instance.SaveLevelId(_levelId);
             StopCoroutine(DayCompleteController());
         }
     }
