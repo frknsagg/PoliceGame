@@ -15,7 +15,6 @@ namespace Controllers
         // [ContextMenu("SpawnEnemy")]
         public void SpawnEnemy(EnemyTypes enemyTypes)
         {
-            var a = PoolType.AmateurRobber;
             var obj = PoolSignals.Instance.onGetPoolObject.Invoke(enemyTypes.ToString(),
                 TranslateTransform(RandomNavmeshLocation()));
             LevelManager.Instance.enemyList.Add(obj);

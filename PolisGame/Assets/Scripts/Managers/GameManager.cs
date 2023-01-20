@@ -57,7 +57,7 @@ namespace Managers
 
         void OnLevelStart()
         {
-            SecurityLevel = PrefsManager.Instance.GetSecurityLevel();
+            SecurityLevel = 100;
             securitySlider.maxValue = SecurityLevel;
             securitySlider.value = SecurityLevel;
         }
@@ -73,7 +73,7 @@ namespace Managers
         {
             startButton.gameObject.SetActive(true);
             isGameStart = false;
-            PrefsManager.Instance.SaveSecurityLevel(SecurityLevel);
+            
         }
     }
 }

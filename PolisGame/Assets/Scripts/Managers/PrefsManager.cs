@@ -18,11 +18,6 @@ namespace Managers
             PlayerPrefs.SetInt("Money", tempMoney);
         }
 
-        public void SaveSecurityLevel(float security)
-        {
-            PlayerPrefs.SetFloat("SecurityLevel", security);
-        }
-
         public void SaveLevelId(int levelId)
         {
             PlayerPrefs.SetInt("LevelID", levelId);
@@ -31,11 +26,6 @@ namespace Managers
         public int GetMoney()
         {
             return PlayerPrefs.GetInt("Money");
-        }
-
-        public float GetSecurityLevel()
-        {
-            return PlayerPrefs.GetFloat("SecurityLevel");
         }
 
         public int GetLevelID()
